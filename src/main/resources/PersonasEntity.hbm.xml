@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entry.PersonasEntity" table="personas" schema="cide">
+        <id name="idPersonas" column="id_personas"/>
+        <property name="nif" column="nif"/>
+        <property name="nombre" column="nombre"/>
+        <property name="primerApellido" column="primer_apellido"/>
+        <property name="segundoApellido" column="segundo_apellido"/>
+        <property name="fechaNacimiento" column="fecha_nacimiento"/>
+        <property name="direccion" column="direccion"/>
+        <property name="sexo" column="sexo"/>
+        <property name="numTelefono" column="num_telefono"/>
+    </class>
+</hibernate-mapping>
